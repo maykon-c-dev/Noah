@@ -112,12 +112,29 @@ main#main_container{
 main div{
     width: 20%;
     margin: 10% auto;
-    padding: 2%;
     text-align: center;
     font: bold max(10px, 3vw) arial;
     border: solid 2px rgb(21, 90, 117);
     border-radius: 5px;
+    
 }
+main img{
+    border: solid 2px rgb(21, 90, 117);
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+}
+main video{
+    border: solid 2px rgb(21, 90, 117);
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+}
+.text_link{
+    border: none;
+    width: 100%;
+}
+
 
 
 footer{
