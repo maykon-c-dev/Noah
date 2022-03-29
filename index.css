@@ -5,8 +5,6 @@
     box-sizing: border-box
   }
 body{
-    padding: 0;
-    margin: 0;
     background-image: url("assets/noite-estrelada.gif");
     background-size: cover;
     margin-top: 1%;
@@ -16,6 +14,8 @@ body{
 }
 #top_container{
     perspective: 1000px ;
+    display: flex;
+    justify-content:space-between;
 }
 
 #flipper{
@@ -46,7 +46,7 @@ header{
 }
 header div#nome_topo{
     width: 25%;
-    padding-bottom: 25%;
+    padding-bottom: 15%;
     text-align: left;
     color: #1a81aad5;
     text-shadow: 1px 1px 0 #cccccc,
@@ -60,7 +60,7 @@ header div#nome_topo{
 }
 header div#menu_modo{
     margin-left: 10%;
-    padding-bottom: 13%;
+    padding-bottom: 8%;
     width: 15%;
     display: inline-block;
 }
@@ -83,47 +83,57 @@ header #btnnoite {
     border-radius: 5px;   
 }
 #centro_topo{
-    margin-left: 0;
-    margin-top: 0%;
-    padding-top: 15%;
-    text-align: center;
+    background: #cccccc2c ;
+    border: solid 2px rgba(255, 255, 0, 0.575);
     color: aliceblue;
-    font: 600 italic max(10px, 5vw) arial;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 3px;
+    font-size:max(15px, 9.2vw) ;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Vollkorn SC', serif;
+    letter-spacing: 2px;
 }
 
-article#sobre-mim{
-    margin-top: 10%;
-    text-align: center;
-    font: 600 italic max(20px, 5vw) arial;
-    letter-spacing: 3px;
+#banner{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
 }
+.star{
+    object-fit: cover;
+    width: 10%;
+}
+.star img{  
+    width: 100%;
+}
+
 main#main_container{
+    background: #ffffff13;
     border: solid 2px rgb(21, 90, 117);
     border-radius: 10px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     align-items:center;
-    margin-top: 5%;
-    
+    margin-top: 8%;   
 }
+
 main div{
-    width: 20%;
-    margin: 10% auto;
+    width: 30%;
+    margin: 5% 5%;
     text-align: center;
     font: bold max(10px, 3vw) arial;
     border: solid 2px rgb(21, 90, 117);
-    border-radius: 5px;
-    
+    border-radius: 5px;  
 }
+
 main img{
     border: solid 2px rgb(21, 90, 117);
     border-radius: 5px;
     width: 100%;
     object-fit: cover;
 }
+
 main video{
     border: solid 2px rgb(21, 90, 117);
     border-radius: 5px;
@@ -135,11 +145,30 @@ main video{
     width: 100%;
 }
 
-
-
 footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
     margin-top: 5%;
     margin-bottom: 1%;
     text-align: center;
+    font-size: max(15px, 3vw);
+}
+
+footer #dev{
+    width: 50%
+}
+
+footer #github{
+    width: 5%;
+}
+
+footer #linkedin{
+    width: 5%
+}
+
+footer img{
+    width: 100%;
 }
 

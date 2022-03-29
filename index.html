@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Vollkorn+SC&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <title>Noah</title>
 </head>
@@ -19,17 +22,25 @@
                     </div>
                 </div>
             </div> 
-
-            <div id="centro_topo">
-                <p>Meu Cantinho!</p>
-            </div>
-
             <div id="menu_modo">
                 <input type="button" id="btndia" value=" &#x2600;&#xFE0F; Dia" onclick="dia()">
                 
                 <input type="button" id="btnnoite" value="&#x1F319; Noite" onclick="noite()">
             </div>
         </header>
+        <article id="banner">
+            <div class="star">
+                <img src="assets/star_left.png">
+            </div>
+            <div id="centro_topo">
+                <marquee><p>Meu Cantinho!</p></marquee>   
+            </div>
+            <div class="star">
+                <img src="assets/star_right.png">
+            </div>
+            
+        </article>
+
         <main id="main_container">
             <div class="menu_main">
                 <a href="galeria.html"> <img src="imagens/IMG-20220319-WA0006.jpg" alt="Noah Dormindo"></a>
@@ -38,7 +49,7 @@
                 </div>
             </div>
             <div class="menu_main">
-                <a href="videos.html"><video src="imagens/VID-20220319-WA0008.mp4"></video></a>
+                <a href="videos.html"><img src="imagens/IMG-20220319-WA0007.jpg"></video></a>
                 <div class="text_link">
                     <p>Videos</p>
                 </div>
@@ -53,8 +64,14 @@
         </main>
 
         <footer>
-            <div>
+            <div id="dev">
                 <p>Desenvolvido por Maykon Dourado</p>
+            </div>
+            <div id="github">
+                <a href=><img src="assets/github_logo.png"></a>
+            </div>
+            <div id="linkedin">
+                <a href=><img src="assets/linkedin_logo.png"></a>
             </div>
 
         </footer>

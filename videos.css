@@ -26,7 +26,7 @@ main{
     width: 200px;
 }
 video{ 
-    border: solid 5px rgba(255, 255, 255, 0.459); 
+    border: solid 8px rgba(255, 255, 255, 0.459); 
     border-radius: 10px;
     width: 100%;
     object-fit:cover;
