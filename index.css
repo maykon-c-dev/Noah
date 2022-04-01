@@ -7,10 +7,11 @@
 body{
     background-image: url("assets/noite-estrelada.gif");
     background-size: cover;
+    object-fit:fill;
     margin-top: 1%;
     margin-right: 4%;
     margin-left: 4%;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 #top_container{
     perspective: 1000px ;
@@ -48,13 +49,12 @@ header div#nome_topo{
     width: 25%;
     padding-bottom: 15%;
     text-align: left;
-    color: #1a81aad5;
+    color: #1a81aae8;
     text-shadow: 1px 1px 0 #cccccc,
     2px 2px 0 #cccccc,
     3px 3px 0 #cccccc,
     4px 4px 0 #cccccc,
-    5px 5px 0 #cccccc,
-    6px 6px 0 #cccccc;
+    5px 5px 0 #cccccc;
     letter-spacing: 3px;
     font: bold italic max(20px,7vw) arial ;
 }
@@ -67,25 +67,25 @@ header div#menu_modo{
 header #btndia {
     background-color: rgba(240, 248, 255, 0.37);  
     display: inline;
-    padding: 1%;  
+    padding: 2%;  
     margin: 2%;  
     font: normal max(10px,2.5vw) arial;
-    border: solid 2px black;   
+    border: solid 2px rgba(255, 252, 252, 0.466);   
     border-radius: 5px;
-
+    cursor: pointer;
 }
 header #btnnoite {
     background-color: rgba(240, 248, 255, 0.37);  
     padding: 1%;  
     margin: 2%;  
     font: normal max(10px,2.5vw) arial;
-    border: solid 2px black;   
-    border-radius: 5px;   
+    border: solid 2px rgba(255, 252, 252, 0.466);   
+    border-radius: 5px; 
+    cursor: pointer;  
 }
 #centro_topo{
-    background: #cccccc2c ;
+    background: #a8a7a741 ;
     border: solid 2px rgba(255, 255, 0, 0.575);
-    color: aliceblue;
     font-size:max(15px, 9.2vw) ;
     font-family: 'Hubballi', cursive;
     font-family: 'Vollkorn SC', serif;
@@ -93,8 +93,7 @@ header #btnnoite {
 }
 
 #banner{
-    display: flex;
-    
+    display: flex;    
     align-items: center;
     justify-content: space-around;
 }
@@ -107,7 +106,7 @@ header #btnnoite {
 }
 
 main#main_container{
-    background: #ffffff13;
+    background: #a8a7a741;
     border: solid 2px rgb(21, 90, 117);
     border-radius: 10px;
     display: flex;
@@ -153,7 +152,7 @@ footer{
     margin-top: 5%;
     margin-bottom: 1%;
     text-align: center;
-    font-size: max(15px, 3vw);
+    font-size: max(9px, 2vw);
 }
 
 footer #dev{
