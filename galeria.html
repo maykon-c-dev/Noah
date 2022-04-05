@@ -7,16 +7,31 @@
     <link href="galeria.css" rel="stylesheet">
     <title>Galeria</title>
 </head>
-<body>
-    <main class="galeria_container">
-        <div class="fotos">
-           <a href="imagens/IMG-20220319-WA0006.jpg"><img src="imagens/IMG-20220319-WA0006.jpg" alt="Noah Sorrindo"></a>
-        </div>
-        <div class="fotos">
-            <a href="imagens/IMG-20220323-WA0000.jpg"><img src="imagens/IMG-20220323-WA0000.jpg" alt="Noah Dormindo"></a>
-        </div>
-        <div class="fotos">
-            <a href="imagens/IMG-20220319-WA0002.jpg"><img src="imagens/IMG-20220319-WA0002.jpg" alt="Noah Sorrindo"></a>
+<body id="container" onload="config()">
+
+    <div id="foto_principal">
+        <img src="imagens/IMG-20220319-WA0006.jpg" alt="Noah Sorrindo">
+    </div>
+
+    <main class="galeria_container">      
+        <div id="lista_fotos">
+            <ul class="slider" >
+                <li>
+                    <div class="fotos" onclick="escolhida(event)">
+                        <img src="imagens/IMG-20220319-WA0006.jpg" alt="Noah Sorrindo" />
+                    </div>
+                </li>
+                <li>
+                    <div class="fotos">
+                        <img src="imagens/IMG-20220323-WA0000.jpg" alt="Noah Dormindo" />
+                    </div>
+                </li>
+                <li>
+                    <div class="fotos">
+                        <img src="imagens/IMG-20220319-WA0002.jpg" alt="Noah Sorrindo" />
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
 
@@ -26,5 +41,7 @@
             <p>Desenvolvido por Maykon Dourado</p>
         </div>
     </footer>
+
+    <script src="galeria.js"></script>
 </body>
 </html>
