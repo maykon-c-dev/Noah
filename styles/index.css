@@ -11,7 +11,7 @@
  }
 
 body{
-    background-image: url("assets/noite-estrelada.gif");
+    background-image: url("../assets/noite-estrelada.gif");
     background-size: cover;
     object-fit:fill;
     margin-top: 1%;
