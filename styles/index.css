@@ -5,13 +5,18 @@
     box-sizing: border-box
 }
 
+@font-face {
+    font-family: Saiyan SansRegular;
+    src: url(fonts/Saiyan-Sans.ttf);
+ }
+
 body{
     background-image: url("assets/noite-estrelada.gif");
     background-size: cover;
     object-fit:fill;
     margin-top: 1%;
-    margin-right: 4%;
-    margin-left: 4%;
+    margin-right: 8%;
+    margin-left: 8%;
     color: rgb(255, 255, 255);
 }
 #top_container{
@@ -50,14 +55,14 @@ header div#nome_topo{
     width: 25%;
     padding-bottom: 15%;
     text-align: left;
-    color: #1a81aae8;
-    text-shadow: 1px 1px 0 #cccccc,
-    2px 2px 0 #cccccc,
+    color: #ba9f54;
+    text-shadow: 1px 1px 0 #000000,
+    2px 2px 0 #000000,
     3px 3px 0 #cccccc,
     4px 4px 0 #cccccc,
     5px 5px 0 #cccccc;
-    letter-spacing: 3px;
-    font: bold italic max(20px,7vw) arial ;
+    letter-spacing: 5px;
+    font:normal italic max(20px,7vw) Saiyan SansRegular;
 }
 header div#menu_modo{
     margin-left: 10%;
@@ -84,25 +89,35 @@ header #btnnoite {
     border-radius: 5px; 
     cursor: pointer;  
 }
-#centro_topo{
-    background: #a8a7a741 ;
-    border: solid 2px rgba(255, 255, 0, 0.575);
-    font-size:max(15px, 9.2vw) ;
-    font-family: 'Hubballi', cursive;
-    font-family: 'Vollkorn SC', serif;
-    letter-spacing: 2px;
-}
 
 #banner{
     display: flex;    
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+
+#centro_topo{    
+    height: 100%;
+    width: 80%;
+    background: #a8a7a741 ;
+    color: #c5ac60;
+    border: solid 2px rgba(255, 255, 0, 0.575);
+    font-size:max(15px, 12vw) ;
+    font-family: Saiyan SansRegular;   
+    letter-spacing: 2px;
+}
+#centro_topo img{
+    height:10vw;   
+    object-fit: cover;
+}
+
 .star{
+    height: 100%;
     object-fit: cover;
     width: 10%;
 }
-.star img{  
+.star img{ 
+    height: 100%; 
     width: 100%;
 }
 
@@ -122,9 +137,12 @@ main div{
     width: 30%;
     margin: 5% 5%;
     text-align: center;
-    font: bold max(10px, 3vw) arial;
+    color: #ba9f54;
+    text-shadow: 2px 2px 0 #000000;
+    font:  italic max(14px, 5vw) Saiyan SansRegular;
+    letter-spacing: 4px;
     border: solid 2px rgb(21, 90, 117);
-    border-radius: 5px;  
+    border-radius: 8px;  
 }
 
 main img{
@@ -145,6 +163,17 @@ main video{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: #ba9f54;
+    text-shadow: 2px 2px 0 #000000;
+}
+
+#img_dbz_footer img{
+    position: absolute;
+    width: 30%;
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -153,11 +182,11 @@ footer{
     margin-top: 5%;
     margin-bottom: 1%;
     text-align: center;
-    font-size: max(9px, 2vw);
+    font: normal max(9px, 3vw) arial;
 }
 
 footer #dev{
-    width: 50%
+    width: 60%
 }
 
 footer #github{
