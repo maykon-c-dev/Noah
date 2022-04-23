@@ -5,15 +5,23 @@
     box-sizing: border-box
 }
 
+:root {
+    --cor-font-principal: #ba9f54;
+    --font-principal: Saiyan SansRegular;
+    --border-container-cor: #161616;
+  }
+
 @font-face {
     font-family: Saiyan SansRegular;
-    src: url(fonts/Saiyan-Sans.ttf);
+    src: url(../fonts/Saiyan-Sans.ttf);
  }
-
+ @font-face {
+    font-family: MagnetoB;
+    src: url(../fonts/MAGNETOB.TTF);
+ }
 body{
     background-image: url("../assets/noite-estrelada.gif");
     background-size: cover;
-    object-fit:fill;
     margin-top: 1%;
     margin-right: 8%;
     margin-left: 8%;
@@ -55,14 +63,14 @@ header div#nome_topo{
     width: 25%;
     padding-bottom: 15%;
     text-align: left;
-    color: #ba9f54;
+    color: var(--cor-font-principal);
     text-shadow: 1px 1px 0 #000000,
     2px 2px 0 #000000,
     3px 3px 0 #cccccc,
     4px 4px 0 #cccccc,
     5px 5px 0 #cccccc;
     letter-spacing: 5px;
-    font:normal italic max(20px,7vw) Saiyan SansRegular;
+    font:normal italic max(20px,7vw) var(--font-principal);
 }
 header div#menu_modo{
     margin-left: 10%;
@@ -72,8 +80,7 @@ header div#menu_modo{
 }
 header #btndia {
     background-color: rgba(240, 248, 255, 0.37);  
-    display: inline;
-    padding: 2%;  
+    padding: 1%;  
     margin: 2%;  
     font: normal max(10px,2.5vw) arial;
     border: solid 2px rgba(255, 252, 252, 0.466);   
@@ -100,11 +107,12 @@ header #btnnoite {
     height: 100%;
     width: 80%;
     background: #a8a7a741 ;
-    color: #c5ac60;
+    color: var(--cor-font-principal);
     border: solid 2px rgba(255, 255, 0, 0.575);
     font-size:max(15px, 12vw) ;
-    font-family: Saiyan SansRegular;   
+    font-family: var(--font-principal);   
     letter-spacing: 2px;
+    text-shadow: #000000 1px 1px 1px;
 }
 #centro_topo img{
     height:10vw;   
@@ -123,37 +131,38 @@ header #btnnoite {
 
 main#main_container{
     background: #a8a7a741;
-    border: solid 2px rgb(21, 90, 117);
+    width: 100%;
+    border: solid 2px var(--border-container-cor);
     border-radius: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     align-items:center;
     margin-top: 8%;   
 }
 
-main div{
+main .menu_main{
     width: 30%;
-    margin: 5% 5%;
+    margin: 5%;
     text-align: center;
-    color: #ba9f54;
+    color: var(--cor-font-principal);
     text-shadow: 2px 2px 0 #000000;
-    font:  italic max(14px, 5vw) Saiyan SansRegular;
+    font:  italic max(14px, 5vw) var(--font-principal);
     letter-spacing: 4px;
-    border: solid 2px rgb(21, 90, 117);
+    border: solid 2px var(--border-container-cor);
     border-radius: 8px;  
 }
 
 main img{
-    border: solid 2px rgb(21, 90, 117);
+    border: solid 2px var(--border-container-cor);
     border-radius: 5px;
     width: 100%;
     object-fit: cover;
 }
 
 main video{
-    border: solid 2px rgb(21, 90, 117);
+    border: solid 2px var(--border-container-cor);
     border-radius: 5px;
     width: 100%;
     object-fit: cover;
@@ -165,7 +174,7 @@ main video{
 
 a{
     text-decoration: none;
-    color: #ba9f54;
+    color: var(--cor-font-principal);
     text-shadow: 2px 2px 0 #000000;
 }
 
@@ -182,7 +191,8 @@ footer{
     margin-top: 5%;
     margin-bottom: 1%;
     text-align: center;
-    font: normal max(9px, 3vw) arial;
+    font: normal max(9px, 2.5vw) arial;
+    color: var(--cor-font-principal);
 }
 
 footer #dev{

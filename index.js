@@ -1,31 +1,39 @@
-function dia(){
+function cars(){
     var btn = document.getElementById("container")
-    btn.style.backgroundImage = "url(assets/dia.jpg)" 
-    document.getElementById("container").style.color = "black" 
-    document.getElementById("container").style.color = "#cccccc" 
-    document.getElementById("centro_topo").style.color = "rgb(117, 104, 126)"
+    btn.style.backgroundImage = "url(assets/background_cars.jpg)" 
+    document.body.style.setProperty('--cor-font-principal','yellow')
+    document.body.style.setProperty('--font-principal','MagnetoB')
+    document.body.style.setProperty('--border-container-cor','#161616')
+    document.getElementById("games_img").src = "assets/cars_footer.png"
+    document.getElementById("banner_img").src = "assets/cars_banner1.png" 
+    document.getElementById("centro_topo").style.color = "#F0270D"
+    document.getElementById("centro_topo").style.fontSize = "max(15px, 10vw)"
     document.getElementById("btndia").style.border = "solid 2px black"
     document.getElementById("btnnoite").style.border = "solid 2px black"
 
-    localStorage.setItem ('config', 'true')
+    localStorage.setItem ('config', 'cars')
 }
 
-function noite(){
+function dbz(){
     document.getElementById("container").style.backgroundImage = "" 
-    document.getElementById("container").style.color = "" 
+    document.body.style.setProperty('--cor-font-principal','')
+    document.body.style.setProperty('--font-principal','Saiyan SansRegular')
+    document.body.style.setProperty('--border-container-cor','rgba(255, 252, 252, 0.466)')
+    document.getElementById("games_img").src = "assets/dbz_footer.png"
+    document.getElementById("banner_img").src = "assets/dbz_banner.png"
     document.getElementById("centro_topo").style.color = "" 
+    document.getElementById("centro_topo").style.fontSize = ""
     document.getElementById("btndia").style.border = ""
     document.getElementById("btnnoite").style.border = ""
 
     localStorage.removeItem ('config')
-    localStorage.removeItem ('dia')
-
 }
+
 function config(){
     let config = localStorage.getItem("config")
-    if(config == "true"){
-        dia()
+    if(config == "cars"){
+        cars()
     }else{
-        noite()
+        dbz()
     }
 }

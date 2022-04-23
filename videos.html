@@ -4,15 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="videos.css" rel="stylesheet">
+    <link href="styles/videos.css" rel="stylesheet">
     <title>Videos</title>
 </head>
-<body>
-    <main class="videos_container">
-        <div class="videos">
-            <video src="imagens/VID-20220319-WA0008.mp4" controls ></video>
+<body id="container" onload="config()">
+    
+    <section id="banner">
+        <div class="star">
+            <img src="./assets/star_left.png">
+        </div>
+        <div id="centro_topo">
+            <marquee><img src="./assets/dbz_banner.png" id="banner_img"><img> Meus Videos</marquee>   
+        </div>
+        <div class="star">
+            <img src="./assets/star_right.png">
+        </div>
+    </section>
+
+
+    
+    <main class="galeria_container">      
+        <div id="lista_videos">
+            <ul class="slider" >
+                
+            </ul>
         </div>
     </main>
     
+
+
+    <footer>
+        <div id="dev">
+            <p>Desenvolvido por <strong><i>Maykon Dourado</i></strong></p>
+        </div>
+        <div id="github">
+            <a href=><img src="assets/github_logo.png"></a>
+        </div>
+        <div id="linkedin">
+            <a href=><img src="assets/linkedin_logo.png"></a>
+        </div>
+
+    </footer>
+
+    <script src="videos.js"></script>
+
 </body>
 </html>
