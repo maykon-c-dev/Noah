@@ -26,6 +26,7 @@ body{
     align-items: center;
     background-image: url("../assets/noite-estrelada.gif");
     background-size: cover;
+    object-fit: fill;
     margin-top: 1%;
     margin-right: 4%;
     margin-left: 4%;
