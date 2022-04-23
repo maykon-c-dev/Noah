@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+  }
+
+  :root {
+    --cor-font-principal: #ba9f54;
+    --font-principal: Saiyan SansRegular;
+    --border-container-cor: #161616;
+}
+
+@font-face {
+    font-family: Saiyan SansRegular;
+    src: url(../fonts/Saiyan-Sans.ttf);
+}
+ @font-face {
+    font-family: MagnetoB;
+    src: url(../fonts/MAGNETOB.TTF);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("../assets/noite-estrelada.gif");
+    background-size: cover;
+    margin-top: 1%;
+    margin-right: 8%;
+    margin-left: 8%;
+    color: white;
+}
+#banner{
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#centro_topo{    
+    height: 100%;
+    width: 80%;
+    background: #a8a7a741 ;
+    color: #c5ac60;
+    border: solid 2px rgba(255, 255, 0, 0.575);
+    font-size:max(15px, 14vw) ;
+    font-family: var(--font-principal);   
+    letter-spacing: 2px;
+}
+#centro_topo img{
+    height:10vw;   
+    object-fit: cover;
+}
+
+.star{
+    height: 100%;
+    object-fit: cover;
+    width: 10%;
+}
+.star img{ 
+    height: 100%; 
+    width: 100%;
+}
+
+
+
+main{
+    margin-top: 4%;
+    display: flex;  
+    flex-direction: row;
+    background-color: #1616163b;
+    border: solid 3px var(--border-container-cor);
+    border-radius: 10px;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+    margin-top: 10%;   
+    
+}
+.videos{   
+    margin: 20px;   
+    width:  max(20vw, 10vmax);
+    height: max(30vh, 10vmax);
+}
+.videos video{
+    border: solid 3px var(--border-container-cor);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-align: center;
+    font: normal max(9px, 3vw) arial;
+    color: var(--cor-font-principal);
+    text-shadow: #161616 1px 1px 1px;
+    
+}
+
+footer #dev{
+    width: 60%
+}
+
+footer #github{
+    width: 5%;
+}
+
+footer #linkedin{
+    width: 5%
+}
+
+footer img{
+    width: 100%;
+}
+

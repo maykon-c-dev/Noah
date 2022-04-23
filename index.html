@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Vollkorn+SC&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
     <title>Noah</title>
 </head>
-<body>
+<body id="container" onload="config()">
         <header id="top_container">
             <div id="nome_topo">
                 <div id="flipper">
@@ -19,45 +22,64 @@
                     </div>
                 </div>
             </div> 
-
-            <div id="centro_topo">
-                <p>Meu Cantinho!</p>
-            </div>
-
             <div id="menu_modo">
-                <input type="button" id="btndia" value=" &#x2600;&#xFE0F; Dia" onclick="dia()">
+                <button type="button" id="btndia"  onclick="cars()"><img src="assets/cars_button.png" alt="Logo Carros" width="100%" /> </button>
                 
-                <input type="button" id="btnnoite" value="&#x1F319; Noite" onclick="noite()">
+                <button type="button" id="btnnoite" onclick="dbz()"><img src="assets/dbz_button.png" alt="Logo Dragonball" width="100%" /> </button>
             </div>
         </header>
+
+        <section id="banner">
+            <div class="star">
+                <img src="assets/star_left.png">
+            </div>
+            <div id="centro_topo">
+                <marquee id="letreiro"><img src="assets/dbz_banner.png" id="banner_img"><img> Meu Cantinho!</marquee>   
+            </div>
+            <div class="star">
+                <img src="assets/star_right.png">
+            </div>
+        </section>
+
         <main id="main_container">
             <div class="menu_main">
                 <a href="galeria.html"> <img src="imagens/IMG-20220319-WA0006.jpg" alt="Noah Dormindo"></a>
                 <div class="text_link">
-                    <p>Fotos</p>
+                    <a href="galeria.html">Fotos</a>
+                    
                 </div>
             </div>
             <div class="menu_main">
-                <a href="videos.html"><video src="imagens/VID-20220319-WA0008.mp4"></video></a>
+                <a href="videos.html"><img src="imagens/IMG-20220319-WA0007.jpg"></video></a>
                 <div class="text_link">
-                    <p>Videos</p>
+                    <a href="videos.html">Videos</a>
                 </div>
             </div>
             <div class="menu_main">
-                <p>Meus Documentos</p>
+                <a href=""><img src="assets/dbz_footer.png" id="games_img"></a>
                 <div class="text_link">
-                    <p>Fotos</p>
+                    <p>Jogos</p>
                 </div>
             </div>
+            
 
         </main>
 
+       
+
         <footer>
-            <div>
-                <p>Desenvolvido por Maykon Dourado</p>
+            <div id="dev">
+                <p>Desenvolvido por <strong><i>Maykon Dourado</i></strong></p>
+            </div>
+            <div id="github">
+                <a href=><img src="assets/github_logo.png"></a>
+            </div>
+            <div id="linkedin">
+                <a href=><img src="assets/linkedin_logo.png"></a>
             </div>
 
         </footer>
 
+        <script src="index.js"></script>
 </body>
 </html>
