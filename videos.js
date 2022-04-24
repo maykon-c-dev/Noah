@@ -24,6 +24,7 @@ const videos = [
 
 function cars(){
     document.getElementById("container").style.backgroundImage = "url(assets/background_cars.jpg)" 
+    document.getElementById("container").style.backgroundSize = "cover"
     document.body.style.setProperty('--cor-font-principal','yellow')
     document.body.style.setProperty('--font-principal','MagnetoB')
     document.body.style.setProperty('--border-container-cor','#161616')

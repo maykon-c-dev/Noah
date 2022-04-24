@@ -25,6 +25,7 @@ body{
     margin: 0;
     background-image: url("../assets/noite-estrelada.gif");
     background-size: cover;
+    background-attachment: fixed;
     margin-top: 1%;
     margin-right: 8%;
     margin-left: 8%;
@@ -81,8 +82,8 @@ main{
 }
 .videos{   
     margin: 20px;   
-    width:  max(20vw, 10vmax);
-    height: max(30vh, 10vmax);
+    width:  max(20vw, 200px);
+    height: auto;
 }
 .videos video{
     border: solid 3px var(--border-container-cor);
@@ -90,6 +91,9 @@ main{
     width: 100%;
     height: 100%;
     object-fit:cover;
+}
+li{
+    list-style-type: none;
 }
 
 
